@@ -15,7 +15,7 @@
   },
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "glassit.alpha": 165,
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Default High Contrast",
   "editor.inlineSuggest.enabled": false,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
@@ -39,5 +39,6 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
-  }
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 }
