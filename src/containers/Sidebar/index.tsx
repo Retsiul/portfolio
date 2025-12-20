@@ -2,7 +2,10 @@ import Avatar from '../../components/Avatar'
 import Paragraph from '../../components/Paragraph'
 import Title from '../../components/Title'
 import { Description, ThemesButtom, SidebarContainer } from './styles'
-const Sidebar = () => {
+type Props = {
+  changeTheme: () => void
+}
+const Sidebar = (props: Props) => {
   return (
     <aside>
       <SidebarContainer>
@@ -14,7 +17,7 @@ const Sidebar = () => {
         <Description tipo="principal" fontSize={12}>
           Engennheiro Front-End
         </Description>
-        <ThemesButtom>Trocar Tema</ThemesButtom>
+        <ThemesButtom onClick={props.changeTheme}>Trocar Tema</ThemesButtom>
       </SidebarContainer>
     </aside>
   )

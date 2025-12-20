@@ -8,8 +8,16 @@ const EstiloGlobal = createGlobalStyle`
   list-style:none;
 }
 
+
 body{
   padding: 80px 0;
+  background-image:radial-gradient(at top left,
+  ${({ theme }) => theme.backgroundColor},
+   ${({ theme }) => theme.backgroundColor2});
+  background-repeat:no-repeat;
+background-attachment: fixed;
+  height:100%;
+  min-height:100vh;
     @media (max-width: 768px) {
     padding-top:16px;
     }

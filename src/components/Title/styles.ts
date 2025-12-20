@@ -4,7 +4,7 @@ import { Props } from './index'
 // --------------------------------------------
 export const Title = styled.h3<Props>`
   margin-bottom: 16px;
-  color: #282a35;
+  color: ${(props) => props.theme.mainColor};
   font-size: ${(props) => (props.fontSize ? props.fontSize + 'px' : '14px')};
   font-weight: bold;
 `
